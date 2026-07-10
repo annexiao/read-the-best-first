@@ -1,0 +1,20 @@
+{
+  "title": "Paul Graham: Essays Ranked by Inspiration",
+  "author": "Paul Graham",
+  "language": "en",
+  "intro": "All 232 essays, ranked by inspiration density. Listen from the top; stop at your threshold.",
+  "chapters": [
+    {
+      "title": "Keep Your Identity Small  ",
+      "source": "html/identity.html"
+    },
+    {
+      "title": "How to Disagree",
+      "source": "html/disagree.html"
+    },
+    {
+      "title": "What You Can't Say",
+      "source": "html/say.html"
+    }
+  ]
+}

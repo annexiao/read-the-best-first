@@ -1,0 +1,3249 @@
+{
+ "schema_version": 1,
+ "rubric_name": "inspiration",
+ "rubric_file": "rubrics/inspiration.md",
+ "book": "Paul Graham: Essays Ranked by Inspiration",
+ "source": "https://paulgraham.com/articles.html",
+ "scored_at": "2026-07-09",
+ "judge_model": "claude-opus (6 parallel batch judges, ~40 essays each)",
+ "input": "first ~450 words of each essay",
+ "rubric": "Dimensions, each 0-10: insight (something true you had never articulated), contrarian depth (challenges a broadly held belief with substance), philosophical reach (generalizes to how you think or live). Overall 1-10 is the judge's holistic call informed by the dimensions, not their average. Overall anchors: 9-10 worldview-shifting; 7-8 strong original framework, high transfer; 5-6 solid but topic-bounded; 3-4 competent but conventional or era-bound; 1-2 announcements/occasional pieces.",
+ "article_gate": "232 pieces fetched; 2 excluded before the book was built (non-article stubs under the ~500-char body floor): RSS (10 words), Lisp for Web-Based Applications (55 words)",
+ "excluded": [
+  {
+   "slug": "rss",
+   "title": "RSS",
+   "url": "https://paulgraham.com/rss.html",
+   "why": "non-article stub"
+  },
+  {
+   "slug": "lwba",
+   "title": "Lisp for Web-Based Applications",
+   "url": "https://paulgraham.com/lwba.html",
+   "why": "non-article stub"
+  }
+ ],
+ "ranking": [
+  {
+   "rank": 1,
+   "slug": "genius",
+   "title": "The Bus Ticket Theory of Genius",
+   "url": "https://paulgraham.com/genius.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 7,
+    "reach": 8
+   },
+   "overall": 9,
+   "reason": "Disinterested obsession as the hidden ingredient of genius",
+   "judge_batch": 1
+  },
+  {
+   "rank": 2,
+   "slug": "wealth",
+   "title": "How to Make Wealth",
+   "url": "https://paulgraham.com/wealth.html",
+   "dimensions": {
+    "insight": 9,
+    "contrarian": 8,
+    "reach": 9
+   },
+   "overall": 9,
+   "reason": "Wealth is created not money; foundational worldview shift",
+   "judge_batch": 5
+  },
+  {
+   "rank": 3,
+   "slug": "say",
+   "title": "What You Can't Say",
+   "url": "https://paulgraham.com/say.html",
+   "dimensions": {
+    "insight": 9,
+    "contrarian": 10,
+    "reach": 9
+   },
+   "overall": 9,
+   "reason": "Moral fashions invisible; recipe for finding heresies",
+   "judge_batch": 5
+  },
+  {
+   "rank": 4,
+   "slug": "superlinear",
+   "title": "Superlinear Returns",
+   "url": "https://paulgraham.com/superlinear.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 7,
+    "reach": 9
+   },
+   "overall": 8,
+   "reason": "Exponential+thresholds; genuinely worldview-shaping lens",
+   "judge_batch": 0
+  },
+  {
+   "rank": 5,
+   "slug": "greatwork",
+   "title": "How to Do Great Work",
+   "url": "https://paulgraham.com/greatwork.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 5,
+    "reach": 9
+   },
+   "overall": 8,
+   "reason": "Field-general synthesis; enormous practical reach",
+   "judge_batch": 0
+  },
+  {
+   "rank": 6,
+   "slug": "think",
+   "title": "How to Think for Yourself",
+   "url": "https://paulgraham.com/think.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 6,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Sharp split: work that needs independent minds vs not",
+   "judge_batch": 1
+  },
+  {
+   "rank": 7,
+   "slug": "conformism",
+   "title": "The Four Quadrants of Conformism",
+   "url": "https://paulgraham.com/conformism.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 6,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Memorable 2x2 that transfers across society",
+   "judge_batch": 1
+  },
+  {
+   "rank": 8,
+   "slug": "orth",
+   "title": "Orthodox Privilege",
+   "url": "https://paulgraham.com/orth.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 8,
+    "reach": 7
+   },
+   "overall": 8,
+   "reason": "Names a blindness the conventional literally cannot see",
+   "judge_batch": 1
+  },
+  {
+   "rank": 9,
+   "slug": "lesson",
+   "title": "The Lesson to Unlearn",
+   "url": "https://paulgraham.com/lesson.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 7,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Learning to game tests as the deep damage of school",
+   "judge_batch": 1
+  },
+  {
+   "rank": 10,
+   "slug": "ineq",
+   "title": "Economic Inequality",
+   "url": "https://paulgraham.com/ineq.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 8,
+    "reach": 7
+   },
+   "overall": 8,
+   "reason": "Tease apart inequality's causes; refutes the pie fallacy",
+   "judge_batch": 1
+  },
+  {
+   "rank": 11,
+   "slug": "re",
+   "title": "The Refragmentation",
+   "url": "https://paulgraham.com/re.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 7,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Fragmentation as erosion of anomalous unifying forces",
+   "judge_batch": 1
+  },
+  {
+   "rank": 12,
+   "slug": "ds",
+   "title": "Do Things that Don't Scale",
+   "url": "https://paulgraham.com/ds.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 8,
+    "reach": 7
+   },
+   "overall": 8,
+   "reason": "Counterintuitive core truth; transfers to any building",
+   "judge_batch": 2
+  },
+  {
+   "rank": 13,
+   "slug": "startupideas",
+   "title": "How to Get Startup Ideas",
+   "url": "https://paulgraham.com/startupideas.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 8,
+   "reason": "Live in the future; seminal idea-generation framework",
+   "judge_batch": 2
+  },
+  {
+   "rank": 14,
+   "slug": "swan",
+   "title": "Black Swan Farming",
+   "url": "https://paulgraham.com/swan.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 8,
+    "reach": 7
+   },
+   "overall": 8,
+   "reason": "Best ideas look bad; turning off intuitions, deep",
+   "judge_batch": 2
+  },
+  {
+   "rank": 15,
+   "slug": "addiction",
+   "title": "The Acceleration of Addictiveness",
+   "url": "https://paulgraham.com/addiction.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 7,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Progress concentrates addictiveness; profound life warning",
+   "judge_batch": 2
+  },
+  {
+   "rank": 16,
+   "slug": "discover",
+   "title": "Persuade xor Discover",
+   "url": "https://paulgraham.com/discover.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 8,
+    "reach": 7
+   },
+   "overall": 8,
+   "reason": "Persuasion and discovery are opposed; corrupts thinking",
+   "judge_batch": 2
+  },
+  {
+   "rank": 17,
+   "slug": "makersschedule",
+   "title": "Maker's Schedule, Manager's Schedule",
+   "url": "https://paulgraham.com/makersschedule.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 6,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Names a real cognitive split, huge transfer to creative work",
+   "judge_batch": 3
+  },
+  {
+   "rank": 18,
+   "slug": "identity",
+   "title": "Keep Your Identity Small",
+   "url": "https://paulgraham.com/identity.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 7,
+    "reach": 9
+   },
+   "overall": 8,
+   "reason": "Identity, not topic, poisons argument; worldview-level",
+   "judge_batch": 3
+  },
+  {
+   "rank": 19,
+   "slug": "cities",
+   "title": "Cities and Ambition",
+   "url": "https://paulgraham.com/cities.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 5,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Cities send ambition-shaping messages; changes life decisions",
+   "judge_batch": 3
+  },
+  {
+   "rank": 20,
+   "slug": "lies",
+   "title": "Lies We Tell Kids",
+   "url": "https://paulgraham.com/lies.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "The conspiracy of adult lies, deeply self-examining",
+   "judge_batch": 3
+  },
+  {
+   "rank": 21,
+   "slug": "disagree",
+   "title": "How to Disagree",
+   "url": "https://paulgraham.com/disagree.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 4,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Disagreement hierarchy, a durable widely-used framework",
+   "judge_batch": 3
+  },
+  {
+   "rank": 22,
+   "slug": "judgement",
+   "title": "Two Kinds of Judgement",
+   "url": "https://paulgraham.com/judgement.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 6,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Judged-as-end vs judged-as-means reframes rejection",
+   "judge_batch": 4
+  },
+  {
+   "rank": 23,
+   "slug": "wisdom",
+   "title": "Is It Worth Being Wise?",
+   "url": "https://paulgraham.com/wisdom.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 6,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Wisdom=high average, intelligence=high peaks",
+   "judge_batch": 4
+  },
+  {
+   "rank": 24,
+   "slug": "marginal",
+   "title": "The Power of the Marginal",
+   "url": "https://paulgraham.com/marginal.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 7,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Outsiders and marginal space breed breakthroughs",
+   "judge_batch": 4
+  },
+  {
+   "rank": 25,
+   "slug": "love",
+   "title": "How to Do What You Love",
+   "url": "https://paulgraham.com/love.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 6,
+    "reach": 9
+   },
+   "overall": 8,
+   "reason": "Deep on work, love, authenticity; wide transfer",
+   "judge_batch": 4
+  },
+  {
+   "rank": 26,
+   "slug": "procrastination",
+   "title": "Good and Bad Procrastination",
+   "url": "https://paulgraham.com/procrastination.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 8,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Good procrastination: skip errands for real work",
+   "judge_batch": 4
+  },
+  {
+   "rank": 27,
+   "slug": "submarine",
+   "title": "The Submarine",
+   "url": "https://paulgraham.com/submarine.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 8,
+    "reach": 7
+   },
+   "overall": 8,
+   "reason": "Half the news is planted by PR firms",
+   "judge_batch": 4
+  },
+  {
+   "rank": 28,
+   "slug": "essay",
+   "title": "The Age of the Essay",
+   "url": "https://paulgraham.com/essay.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 7,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "What an essay really is; reframes thinking and writing",
+   "judge_batch": 5
+  },
+  {
+   "rank": 29,
+   "slug": "gh",
+   "title": "Great Hackers",
+   "url": "https://paulgraham.com/gh.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 7,
+    "reach": 7
+   },
+   "overall": 8,
+   "reason": "Imagination dominates productivity; deciding what problem to solve",
+   "judge_batch": 5
+  },
+  {
+   "rank": 30,
+   "slug": "gap",
+   "title": "Mind the Gap",
+   "url": "https://paulgraham.com/gap.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 8,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Daddy model of wealth; income variation as health",
+   "judge_batch": 5
+  },
+  {
+   "rank": 31,
+   "slug": "hp",
+   "title": "Hackers and Painters",
+   "url": "https://paulgraham.com/hp.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 7,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Hackers as makers not scientists; enduring frame",
+   "judge_batch": 5
+  },
+  {
+   "rank": 32,
+   "slug": "nerds",
+   "title": "Why Nerds are Unpopular",
+   "url": "https://paulgraham.com/nerds.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 8,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Smart-equals-unpopular dissected; school as artificial world",
+   "judge_batch": 5
+  },
+  {
+   "rank": 33,
+   "slug": "taste",
+   "title": "Taste for Makers",
+   "url": "https://paulgraham.com/taste.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 7,
+    "reach": 8
+   },
+   "overall": 8,
+   "reason": "Taste is not subjective; principles of beauty across fields",
+   "judge_batch": 5
+  },
+  {
+   "rank": 34,
+   "slug": "brandage",
+   "title": "The Brand Age",
+   "url": "https://paulgraham.com/brandage.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "How engineering decays into brand; wide transfer",
+   "judge_batch": 0
+  },
+  {
+   "rank": 35,
+   "slug": "goodwriting",
+   "title": "Good Writing",
+   "url": "https://paulgraham.com/goodwriting.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Sound-good equals more-right; preposterous and true",
+   "judge_batch": 0
+  },
+  {
+   "rank": 36,
+   "slug": "do",
+   "title": "What to Do",
+   "url": "https://paulgraham.com/do.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 5,
+    "reach": 8
+   },
+   "overall": 7,
+   "reason": "First-principles 'make good new things'; broad life reach",
+   "judge_batch": 0
+  },
+  {
+   "rank": 37,
+   "slug": "woke",
+   "title": "The Origins of Wokeness",
+   "url": "https://paulgraham.com/woke.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 9,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Prigs across eras; strong historical contrarian frame",
+   "judge_batch": 0
+  },
+  {
+   "rank": 38,
+   "slug": "writes",
+   "title": "Writes and Write-Nots",
+   "url": "https://paulgraham.com/writes.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Writing is thinking; AI splits writes/write-nots",
+   "judge_batch": 0
+  },
+  {
+   "rank": 39,
+   "slug": "foundermode",
+   "title": "Founder Mode",
+   "url": "https://paulgraham.com/foundermode.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 8,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Names founder vs manager mode; underdeveloped but seminal",
+   "judge_batch": 0
+  },
+  {
+   "rank": 40,
+   "slug": "alien",
+   "title": "Alien Truth",
+   "url": "https://paulgraham.com/alien.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 5,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Alien truth as target for generality; fresh",
+   "judge_batch": 0
+  },
+  {
+   "rank": 41,
+   "slug": "heresy",
+   "title": "Heresy",
+   "url": "https://paulgraham.com/heresy.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 8,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Structural anatomy of heresy; bracing challenge",
+   "judge_batch": 0
+  },
+  {
+   "rank": 42,
+   "slug": "smart",
+   "title": "Beyond Smart",
+   "url": "https://paulgraham.com/smart.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Intelligence is means, new ideas the end",
+   "judge_batch": 0
+  },
+  {
+   "rank": 43,
+   "slug": "own",
+   "title": "A Project of One's Own",
+   "url": "https://paulgraham.com/own.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 5,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Own-project as skating; captures deep motivation truth",
+   "judge_batch": 0
+  },
+  {
+   "rank": 44,
+   "slug": "newideas",
+   "title": "Crazy New Ideas",
+   "url": "https://paulgraham.com/newideas.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Why credible crazy ideas deserve a hearing",
+   "judge_batch": 0
+  },
+  {
+   "rank": 45,
+   "slug": "earnest",
+   "title": "Earnestness",
+   "url": "https://paulgraham.com/earnest.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Earnestness as underrated engine; strong character reach",
+   "judge_batch": 0
+  },
+  {
+   "rank": 46,
+   "slug": "early",
+   "title": "Early Work",
+   "url": "https://paulgraham.com/early.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Naming the fear of lame early work, how to push past",
+   "judge_batch": 1
+  },
+  {
+   "rank": 47,
+   "slug": "useful",
+   "title": "How to Write Usefully",
+   "url": "https://paulgraham.com/useful.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 5,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Decomposes usefulness into multipliable components",
+   "judge_batch": 1
+  },
+  {
+   "rank": 48,
+   "slug": "mod",
+   "title": "The Two Kinds of Moderate",
+   "url": "https://paulgraham.com/mod.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Accidental vs intentional moderate is a real cut",
+   "judge_batch": 1
+  },
+  {
+   "rank": 49,
+   "slug": "nov",
+   "title": "Novelty and Heresy",
+   "url": "https://paulgraham.com/nov.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Dead zones of ideas around cherished false assumptions",
+   "judge_batch": 1
+  },
+  {
+   "rank": 50,
+   "slug": "vb",
+   "title": "Life is Short",
+   "url": "https://paulgraham.com/vb.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 5,
+    "reach": 8
+   },
+   "overall": 7,
+   "reason": "Discretizing time proves life really is short",
+   "judge_batch": 1
+  },
+  {
+   "rank": 51,
+   "slug": "bias",
+   "title": "A Way to Detect Bias",
+   "url": "https://paulgraham.com/bias.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Elegant test: bias means the selected outperform",
+   "judge_batch": 1
+  },
+  {
+   "rank": 52,
+   "slug": "work",
+   "title": "What Doesn't Seem Like Work?",
+   "url": "https://paulgraham.com/work.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 5,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "What feels like play to you signals your fit",
+   "judge_batch": 1
+  },
+  {
+   "rank": 53,
+   "slug": "ecw",
+   "title": "How to Be an Expert in a Changing World",
+   "url": "https://paulgraham.com/ecw.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Guard beliefs against a world that keeps changing",
+   "judge_batch": 1
+  },
+  {
+   "rank": 54,
+   "slug": "know",
+   "title": "How You Know",
+   "url": "https://paulgraham.com/know.html",
+   "dimensions": {
+    "insight": 8,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Mind as compiled program; reading shapes model, not memory",
+   "judge_batch": 1
+  },
+  {
+   "rank": 55,
+   "slug": "growth",
+   "title": "Startup = Growth",
+   "url": "https://paulgraham.com/growth.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Growth as compass; foundational definitional framework",
+   "judge_batch": 2
+  },
+  {
+   "rank": 56,
+   "slug": "speak",
+   "title": "Writing and Speaking",
+   "url": "https://paulgraham.com/speak.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Ideas matter little in speaking; real revelation",
+   "judge_batch": 2
+  },
+  {
+   "rank": 57,
+   "slug": "property",
+   "title": "Defining Property",
+   "url": "https://paulgraham.com/property.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Property is what works to treat as property; philosophical",
+   "judge_batch": 2
+  },
+  {
+   "rank": 58,
+   "slug": "schlep",
+   "title": "Schlep Blindness",
+   "url": "https://paulgraham.com/schlep.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Unconscious avoidance hides ideas; memorable, transfers",
+   "judge_batch": 2
+  },
+  {
+   "rank": 59,
+   "slug": "top",
+   "title": "The Top Idea in Your Mind",
+   "url": "https://paulgraham.com/top.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "One top idea hoards background thought; high transfer",
+   "judge_batch": 2
+  },
+  {
+   "rank": 60,
+   "slug": "selfindulgence",
+   "title": "How to Lose Time and Money",
+   "url": "https://paulgraham.com/selfindulgence.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Fake work loses time like bad investments lose money",
+   "judge_batch": 2
+  },
+  {
+   "rank": 61,
+   "slug": "publishing",
+   "title": "Post-Medium Publishing",
+   "url": "https://paulgraham.com/publishing.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 8,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "You paid for medium not content; sharp reframe",
+   "judge_batch": 2
+  },
+  {
+   "rank": 62,
+   "slug": "boss",
+   "title": "You Weren't Meant to Have a Boss",
+   "url": "https://paulgraham.com/boss.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Normal jobs unnatural like junk food; bold and transferable",
+   "judge_batch": 3
+  },
+  {
+   "rank": 63,
+   "slug": "philosophy",
+   "title": "How to Do Philosophy",
+   "url": "https://paulgraham.com/philosophy.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 8,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Much of philosophy is empty word games; bracingly heretical",
+   "judge_batch": 3
+  },
+  {
+   "rank": 64,
+   "slug": "unions",
+   "title": "An Alternative Theory of Unions",
+   "url": "https://paulgraham.com/unions.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 9,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Union jobs as growth-market artifact, not heroism",
+   "judge_batch": 4
+  },
+  {
+   "rank": 65,
+   "slug": "goodart",
+   "title": "How Art Can Be Good",
+   "url": "https://paulgraham.com/goodart.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 8,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Attacks taste-relativism via shared human audience",
+   "judge_batch": 4
+  },
+  {
+   "rank": 66,
+   "slug": "randomness",
+   "title": "See Randomness",
+   "url": "https://paulgraham.com/randomness.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 8
+   },
+   "overall": 7,
+   "reason": "Look for insight in anthropocentric blind spots",
+   "judge_batch": 4
+  },
+  {
+   "rank": 67,
+   "slug": "inequality",
+   "title": "Inequality and Risk",
+   "url": "https://paulgraham.com/inequality.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 8,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Compressing wealth means suppressing risk-taking",
+   "judge_batch": 4
+  },
+  {
+   "rank": 68,
+   "slug": "opensource",
+   "title": "What Business Can Learn from Open Source",
+   "url": "https://paulgraham.com/opensource.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Darwinian bottom-up quality beyond software",
+   "judge_batch": 4
+  },
+  {
+   "rank": 69,
+   "slug": "venturecapital",
+   "title": "A Unified Theory of VC Suckage",
+   "url": "https://paulgraham.com/venturecapital.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "VC pathologies all trace to fund pay structure",
+   "judge_batch": 4
+  },
+  {
+   "rank": 70,
+   "slug": "hs",
+   "title": "What You'll Wish You'd Known",
+   "url": "https://paulgraham.com/hs.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 8
+   },
+   "overall": 7,
+   "reason": "Discover-what-you-like over fixed plans; broadly useful life reframe",
+   "judge_batch": 5
+  },
+  {
+   "rank": 71,
+   "slug": "pypar",
+   "title": "The Python Paradox",
+   "url": "https://paulgraham.com/pypar.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 7
+   },
+   "overall": 7,
+   "reason": "Esoteric-language signaling; memorable, transfers to hiring",
+   "judge_batch": 5
+  },
+  {
+   "rank": 72,
+   "slug": "icad",
+   "title": "Revenge of the Nerds",
+   "url": "https://paulgraham.com/icad.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Languages not equivalent; pointy-haired-boss critique",
+   "judge_batch": 5
+  },
+  {
+   "rank": 73,
+   "slug": "road",
+   "title": "The Other Road Ahead",
+   "url": "https://paulgraham.com/road.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Server-based software predicted; prescient SaaS thesis",
+   "judge_batch": 5
+  },
+  {
+   "rank": 74,
+   "slug": "avg",
+   "title": "Beating the Averages",
+   "url": "https://paulgraham.com/avg.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 7,
+   "reason": "Blub paradox; you can't see power above your language",
+   "judge_batch": 5
+  },
+  {
+   "rank": 75,
+   "slug": "earn",
+   "title": "How to Earn a Billion Dollars",
+   "url": "https://paulgraham.com/earn.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 8,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Rebuts 'no honest billionaire' well but stays political",
+   "judge_batch": 0
+  },
+  {
+   "rank": 76,
+   "slug": "field",
+   "title": "The Shape of the Essay Field",
+   "url": "https://paulgraham.com/field.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Writing for smart young; crisp meta-insight",
+   "judge_batch": 0
+  },
+  {
+   "rank": 77,
+   "slug": "when",
+   "title": "When To Do What You Love",
+   "url": "https://paulgraham.com/when.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Nuanced trace of follow-your-passion border",
+   "judge_batch": 0
+  },
+  {
+   "rank": 78,
+   "slug": "persistence",
+   "title": "The Right Kind of Stubborn",
+   "url": "https://paulgraham.com/persistence.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 5,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Persistent vs obstinate; useful clean distinction",
+   "judge_batch": 0
+  },
+  {
+   "rank": 79,
+   "slug": "best",
+   "title": "The Best Essay",
+   "url": "https://paulgraham.com/best.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 5,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Recursive take on what makes an essay great",
+   "judge_batch": 0
+  },
+  {
+   "rank": 80,
+   "slug": "getideas",
+   "title": "How to Get New Ideas",
+   "url": "https://paulgraham.com/getideas.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 4,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Anomalies at fractal frontiers; dense but tiny",
+   "judge_batch": 0
+  },
+  {
+   "rank": 81,
+   "slug": "words",
+   "title": "Putting Ideas into Words",
+   "url": "https://paulgraham.com/words.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 5,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Words change the ideas you thought you had",
+   "judge_batch": 0
+  },
+  {
+   "rank": 82,
+   "slug": "goodtaste",
+   "title": "Is There Such a Thing as Good Taste?",
+   "url": "https://paulgraham.com/goodtaste.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Reductio that good taste must exist",
+   "judge_batch": 0
+  },
+  {
+   "rank": 83,
+   "slug": "hwh",
+   "title": "How to Work Hard",
+   "url": "https://paulgraham.com/hwh.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 4,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Ability+practice+effort; solid, semi-conventional",
+   "judge_batch": 0
+  },
+  {
+   "rank": 84,
+   "slug": "fn",
+   "title": "Fierce Nerds",
+   "url": "https://paulgraham.com/fn.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Fierce-nerd character study; sharp but typed",
+   "judge_batch": 0
+  },
+  {
+   "rank": 85,
+   "slug": "richnow",
+   "title": "How People Get Rich Now",
+   "url": "https://paulgraham.com/richnow.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Inheritance to founding shift; good economic read",
+   "judge_batch": 0
+  },
+  {
+   "rank": 86,
+   "slug": "worked",
+   "title": "What I Worked On",
+   "url": "https://paulgraham.com/worked.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 3,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Rich autobiography; insight woven, not argued",
+   "judge_batch": 0
+  },
+  {
+   "rank": 87,
+   "slug": "noob",
+   "title": "Being a Noob",
+   "url": "https://paulgraham.com/noob.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Feeling like noob inversely tracks real ignorance",
+   "judge_batch": 1
+  },
+  {
+   "rank": 88,
+   "slug": "fh",
+   "title": "Haters",
+   "url": "https://paulgraham.com/fh.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Haters are fanboys with sign switched; fame-bound",
+   "judge_batch": 1
+  },
+  {
+   "rank": 89,
+   "slug": "fp",
+   "title": "Fashionable Problems",
+   "url": "https://paulgraham.com/fp.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Smart people are conservative about what to work on",
+   "judge_batch": 1
+  },
+  {
+   "rank": 90,
+   "slug": "kids",
+   "title": "Having Kids",
+   "url": "https://paulgraham.com/kids.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Selection bias reframe, but partly personal testimony",
+   "judge_batch": 1
+  },
+  {
+   "rank": 91,
+   "slug": "sun",
+   "title": "General and Surprising",
+   "url": "https://paulgraham.com/sun.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 4,
+    "reach": 7
+   },
+   "overall": 6,
+   "reason": "General plus surprising as the axis of valuable insight",
+   "judge_batch": 1
+  },
+  {
+   "rank": 92,
+   "slug": "disc",
+   "title": "The Risk of Discovery",
+   "url": "https://paulgraham.com/disc.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Smartness and craziness less separate than we think",
+   "judge_batch": 1
+  },
+  {
+   "rank": 93,
+   "slug": "talk",
+   "title": "Write Like You Talk",
+   "url": "https://paulgraham.com/talk.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Write like you talk; solid but well-worn advice",
+   "judge_batch": 1
+  },
+  {
+   "rank": 94,
+   "slug": "aord",
+   "title": "Default Alive or Default Dead?",
+   "url": "https://paulgraham.com/aord.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 4,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Default-alive framing useful but startup-bounded",
+   "judge_batch": 1
+  },
+  {
+   "rank": 95,
+   "slug": "altair",
+   "title": "What Microsoft Is this the Altair Basic of?",
+   "url": "https://paulgraham.com/altair.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Lame-seeming ideas as unrecognized swans",
+   "judge_batch": 1
+  },
+  {
+   "rank": 96,
+   "slug": "mean",
+   "title": "Mean People Fail",
+   "url": "https://paulgraham.com/mean.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Meanness makes you stupid; domain-limited claim",
+   "judge_batch": 1
+  },
+  {
+   "rank": 97,
+   "slug": "before",
+   "title": "Before the Startup",
+   "url": "https://paulgraham.com/before.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Startups counterintuitive; solid but list-like lecture",
+   "judge_batch": 1
+  },
+  {
+   "rank": 98,
+   "slug": "todo",
+   "title": "The Top of My Todo List",
+   "url": "https://paulgraham.com/todo.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 4,
+    "reach": 7
+   },
+   "overall": 6,
+   "reason": "Errors of omission by default; life-reaching, brief",
+   "judge_batch": 2
+  },
+  {
+   "rank": 99,
+   "slug": "ambitious",
+   "title": "Frighteningly Ambitious Startup Ideas",
+   "url": "https://paulgraham.com/ambitious.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Big ideas repel because they threaten identity",
+   "judge_batch": 2
+  },
+  {
+   "rank": 100,
+   "slug": "word",
+   "title": "A Word to the Resourceful",
+   "url": "https://paulgraham.com/word.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Hard-to-talk-to as denial; nice character insight",
+   "judge_batch": 2
+  },
+  {
+   "rank": 101,
+   "slug": "yahoo",
+   "title": "What Happened to Yahoo",
+   "url": "https://paulgraham.com/yahoo.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Easy money as poison; good post-mortem lesson",
+   "judge_batch": 2
+  },
+  {
+   "rank": 102,
+   "slug": "nthings",
+   "title": "The List of N Things",
+   "url": "https://paulgraham.com/nthings.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Dissects why list-essays seduce; clever meta",
+   "judge_batch": 2
+  },
+  {
+   "rank": 103,
+   "slug": "determination",
+   "title": "The Anatomy of Determination",
+   "url": "https://paulgraham.com/determination.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Determination beats talent, decomposed into willfulness",
+   "judge_batch": 2
+  },
+  {
+   "rank": 104,
+   "slug": "segway",
+   "title": "The Trouble with the Segway",
+   "url": "https://paulgraham.com/segway.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Too-easy funding = blind alley; clever generalizable point",
+   "judge_batch": 2
+  },
+  {
+   "rank": 105,
+   "slug": "credentials",
+   "title": "After Credentials",
+   "url": "https://paulgraham.com/credentials.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Performance displacing credentials, strong historical sweep",
+   "judge_batch": 3
+  },
+  {
+   "rank": 106,
+   "slug": "highres",
+   "title": "The High-Res Society",
+   "url": "https://paulgraham.com/highres.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Speed of small groups beats scale; solid sociological reach",
+   "judge_batch": 3
+  },
+  {
+   "rank": 107,
+   "slug": "artistsship",
+   "title": "The Other Half of \"Artists Ship\"",
+   "url": "https://paulgraham.com/artistsship.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Every check has a hidden cost; generalizes to institutions",
+   "judge_batch": 3
+  },
+  {
+   "rank": 108,
+   "slug": "distraction",
+   "title": "Disconnecting Distraction",
+   "url": "https://paulgraham.com/distraction.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 3,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Distraction evolves toward you; relatable and true",
+   "judge_batch": 3
+  },
+  {
+   "rank": 109,
+   "slug": "good",
+   "title": "Be Good",
+   "url": "https://paulgraham.com/good.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Best startups resemble charities; provocative reframe",
+   "judge_batch": 3
+  },
+  {
+   "rank": 110,
+   "slug": "newthings",
+   "title": "Six Principles for Making New Things",
+   "url": "https://paulgraham.com/newthings.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Flimsy-seeming things win; genuine design philosophy",
+   "judge_batch": 3
+  },
+  {
+   "rank": 111,
+   "slug": "colleges",
+   "title": "News from the Front",
+   "url": "https://paulgraham.com/colleges.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Where you went to college barely matters; data-backed contrarian",
+   "judge_batch": 3
+  },
+  {
+   "rank": 112,
+   "slug": "head",
+   "title": "Holding a Program in One's Head",
+   "url": "https://paulgraham.com/head.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 4,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Code as a mental model; strong for deep-work generally",
+   "judge_batch": 3
+  },
+  {
+   "rank": 113,
+   "slug": "stuff",
+   "title": "Stuff",
+   "url": "https://paulgraham.com/stuff.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 7
+   },
+   "overall": 6,
+   "reason": "Possessions as illiquid liabilities; clean life-level reframe",
+   "judge_batch": 3
+  },
+  {
+   "rank": 114,
+   "slug": "foundersatwork",
+   "title": "Learning from Founders",
+   "url": "https://paulgraham.com/foundersatwork.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Appearances rise as performance falls",
+   "judge_batch": 4
+  },
+  {
+   "rank": 115,
+   "slug": "copy",
+   "title": "Copy What You Like",
+   "url": "https://paulgraham.com/copy.html",
+   "dimensions": {
+    "insight": 7,
+    "contrarian": 6,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Imitate what you like, not the prestigious",
+   "judge_batch": 4
+  },
+  {
+   "rank": 116,
+   "slug": "siliconvalley",
+   "title": "How to Be Silicon Valley",
+   "url": "https://paulgraham.com/siliconvalley.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Hubs need only rich people plus nerds",
+   "judge_batch": 4
+  },
+  {
+   "rank": 117,
+   "slug": "softwarepatents",
+   "title": "Are Software Patents Evil?",
+   "url": "https://paulgraham.com/softwarepatents.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 7,
+    "reach": 4
+   },
+   "overall": 6,
+   "reason": "Against software patents means against patents",
+   "judge_batch": 4
+  },
+  {
+   "rank": 118,
+   "slug": "ideas",
+   "title": "Ideas for Startups",
+   "url": "https://paulgraham.com/ideas.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Startup ideas aren't rare million-dollar miracles",
+   "judge_batch": 4
+  },
+  {
+   "rank": 119,
+   "slug": "ladder",
+   "title": "After the Ladder",
+   "url": "https://paulgraham.com/ladder.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 7,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Sinecures are invisible wealth; ladder had value",
+   "judge_batch": 4
+  },
+  {
+   "rank": 120,
+   "slug": "hiring",
+   "title": "Hiring is Obsolete",
+   "url": "https://paulgraham.com/hiring.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 7,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Undergrads undervalued; startups as arbitrage",
+   "judge_batch": 4
+  },
+  {
+   "rank": 121,
+   "slug": "bronze",
+   "title": "Why Smart People Have Bad Ideas",
+   "url": "https://paulgraham.com/bronze.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Promising people, unpromising first ideas",
+   "judge_batch": 4
+  },
+  {
+   "rank": 122,
+   "slug": "writing44",
+   "title": "Writing,  Briefly",
+   "url": "https://paulgraham.com/writing44.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Writing generates ideas; dense compressed advice",
+   "judge_batch": 4
+  },
+  {
+   "rank": 123,
+   "slug": "start",
+   "title": "How to Start a Startup",
+   "url": "https://paulgraham.com/start.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 4,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Foundational three-things; influential but tactical",
+   "judge_batch": 4
+  },
+  {
+   "rank": 124,
+   "slug": "bubble",
+   "title": "What the Bubble Got Right",
+   "url": "https://paulgraham.com/bubble.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Bubbles need a solid core; Ponzi framing sharp",
+   "judge_batch": 5
+  },
+  {
+   "rank": 125,
+   "slug": "gba",
+   "title": "The Word \"Hacker\"",
+   "url": "https://paulgraham.com/gba.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Disobedience as byproduct of good programmers; solid",
+   "judge_batch": 5
+  },
+  {
+   "rank": 126,
+   "slug": "hundred",
+   "title": "The Hundred-Year Language",
+   "url": "https://paulgraham.com/hundred.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Languages as evolutionary trees; useful heuristic",
+   "judge_batch": 5
+  },
+  {
+   "rank": 127,
+   "slug": "desres",
+   "title": "Design and Research",
+   "url": "https://paulgraham.com/desres.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Design=good, research=new; focus on user",
+   "judge_batch": 5
+  },
+  {
+   "rank": 128,
+   "slug": "spam",
+   "title": "A Plan for Spam",
+   "url": "https://paulgraham.com/spam.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "Content-based Bayesian filtering; historically pivotal, technical",
+   "judge_batch": 5
+  },
+  {
+   "rank": 129,
+   "slug": "power",
+   "title": "Succinctness is Power",
+   "url": "https://paulgraham.com/power.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Succinctness equals power; provocative hypothesis",
+   "judge_batch": 5
+  },
+  {
+   "rank": 130,
+   "slug": "noop",
+   "title": "Why Arc Isn't Especially Object-Oriented",
+   "url": "https://paulgraham.com/noop.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 7,
+    "reach": 5
+   },
+   "overall": 6,
+   "reason": "OOP overrated; three-and-a-half bad reasons people like it",
+   "judge_batch": 5
+  },
+  {
+   "rank": 131,
+   "slug": "progbot",
+   "title": "Programming Bottom-Up",
+   "url": "https://paulgraham.com/progbot.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 6
+   },
+   "overall": 6,
+   "reason": "Bottom-up design; build language toward problem",
+   "judge_batch": 5
+  },
+  {
+   "rank": 132,
+   "slug": "google",
+   "title": "How to Start Google",
+   "url": "https://paulgraham.com/google.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Startup basics for teens, conventional for PG",
+   "judge_batch": 0
+  },
+  {
+   "rank": 133,
+   "slug": "read",
+   "title": "The Need to Read",
+   "url": "https://paulgraham.com/read.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 4,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Reading feeds writing feeds thinking; familiar theme",
+   "judge_batch": 0
+  },
+  {
+   "rank": 134,
+   "slug": "want",
+   "title": "What You (Want to)* Want",
+   "url": "https://paulgraham.com/want.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 4,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Free-will regex; clever, contained puzzle",
+   "judge_batch": 0
+  },
+  {
+   "rank": 135,
+   "slug": "real",
+   "title": "The Real Reason to End the Death Penalty",
+   "url": "https://paulgraham.com/real.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 6,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "State convicts innocents; pointed but bounded",
+   "judge_batch": 0
+  },
+  {
+   "rank": 136,
+   "slug": "simply",
+   "title": "Write Simply",
+   "url": "https://paulgraham.com/simply.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Write-simply craft advice; useful, conventional",
+   "judge_batch": 0
+  },
+  {
+   "rank": 137,
+   "slug": "ace",
+   "title": "Billionaires Build",
+   "url": "https://paulgraham.com/ace.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Builders vs takers; occasional-response feel",
+   "judge_batch": 0
+  },
+  {
+   "rank": 138,
+   "slug": "safe",
+   "title": "Why It's Safe for Founders to Be Nice",
+   "url": "https://paulgraham.com/safe.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 6,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Growth-rate math shows niceness costs little",
+   "judge_batch": 1
+  },
+  {
+   "rank": 139,
+   "slug": "ronco",
+   "title": "The Ronco Principle",
+   "url": "https://paulgraham.com/ronco.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Being genuinely good pays in transparent worlds",
+   "judge_batch": 1
+  },
+  {
+   "rank": 140,
+   "slug": "95",
+   "title": "Let the Other 95% of Great Programmers In",
+   "url": "https://paulgraham.com/95.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 6,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Ability variation argument for immigration; policy-bound",
+   "judge_batch": 1
+  },
+  {
+   "rank": 141,
+   "slug": "convince",
+   "title": "How to Convince Investors",
+   "url": "https://paulgraham.com/convince.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Investors rationalize gut calls; useful, topic-bounded",
+   "judge_batch": 2
+  },
+  {
+   "rank": 142,
+   "slug": "hubs",
+   "title": "Why Startup Hubs Work",
+   "url": "https://paulgraham.com/hubs.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Death is the default reframe; still topic-bounded",
+   "judge_batch": 2
+  },
+  {
+   "rank": 143,
+   "slug": "founders",
+   "title": "What We Look for in Founders",
+   "url": "https://paulgraham.com/founders.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Determination over intelligence; solid list piece",
+   "judge_batch": 2
+  },
+  {
+   "rank": 144,
+   "slug": "organic",
+   "title": "Organic Startup Ideas",
+   "url": "https://paulgraham.com/organic.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 4,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Build what you wish existed; overlaps startupideas",
+   "judge_batch": 2
+  },
+  {
+   "rank": 145,
+   "slug": "really",
+   "title": "What Startups Are Really Like",
+   "url": "https://paulgraham.com/really.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Survey of founder surprises; useful, list-shaped",
+   "judge_batch": 2
+  },
+  {
+   "rank": 146,
+   "slug": "revolution",
+   "title": "A Local Revolution?",
+   "url": "https://paulgraham.com/revolution.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Startups may not spread like past revolutions; sharp but bounded",
+   "judge_batch": 3
+  },
+  {
+   "rank": 147,
+   "slug": "relres",
+   "title": "Relentlessly Resourceful",
+   "url": "https://paulgraham.com/relres.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Nice compression of founder quality, mostly domain-bound",
+   "judge_batch": 3
+  },
+  {
+   "rank": 148,
+   "slug": "convergence",
+   "title": "Why TV Lost",
+   "url": "https://paulgraham.com/convergence.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 4,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Social apps, not content, killed TV; good analysis",
+   "judge_batch": 3
+  },
+  {
+   "rank": 149,
+   "slug": "hackernews",
+   "title": "What I've Learned from Hacker News",
+   "url": "https://paulgraham.com/hackernews.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Community-design lessons, moderately transferable",
+   "judge_batch": 3
+  },
+  {
+   "rank": 150,
+   "slug": "13sentences",
+   "title": "Startups in 13 Sentences",
+   "url": "https://paulgraham.com/13sentences.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Compressed startup wisdom, list format",
+   "judge_batch": 3
+  },
+  {
+   "rank": 151,
+   "slug": "googles",
+   "title": "Why There Aren't More Googles",
+   "url": "https://paulgraham.com/googles.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 6,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "VCs won't even fund innovation; contrarian but bounded",
+   "judge_batch": 3
+  },
+  {
+   "rank": 152,
+   "slug": "heroes",
+   "title": "Some Heroes",
+   "url": "https://paulgraham.com/heroes.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Care excessively plus honesty; mostly personal list",
+   "judge_batch": 3
+  },
+  {
+   "rank": 153,
+   "slug": "trolls",
+   "title": "Trolls",
+   "url": "https://paulgraham.com/trolls.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Causes of online nastiness, decent but familiar",
+   "judge_batch": 3
+  },
+  {
+   "rank": 154,
+   "slug": "equity",
+   "title": "The Equity Equation",
+   "url": "https://paulgraham.com/equity.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 5,
+   "reason": "Elegant 1/(1-n) rule, but self-contained finance",
+   "judge_batch": 3
+  },
+  {
+   "rank": 155,
+   "slug": "notnot",
+   "title": "Why to Not Not Start a Startup",
+   "url": "https://paulgraham.com/notnot.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Objection-rebuttal motivation, topic-bounded",
+   "judge_batch": 4
+  },
+  {
+   "rank": 156,
+   "slug": "startupmistakes",
+   "title": "The 18 Mistakes That Kill Startups",
+   "url": "https://paulgraham.com/startupmistakes.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Solid checklist, conventional in form",
+   "judge_batch": 4
+  },
+  {
+   "rank": 157,
+   "slug": "mit",
+   "title": "A Student's Guide to Startups",
+   "url": "https://paulgraham.com/mit.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Graduation removes failure excuse; mostly tactical",
+   "judge_batch": 4
+  },
+  {
+   "rank": 158,
+   "slug": "america",
+   "title": "Why Startups Condense in America",
+   "url": "https://paulgraham.com/america.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "US startup advantages, analytical and dated",
+   "judge_batch": 4
+  },
+  {
+   "rank": 159,
+   "slug": "startuplessons",
+   "title": "The Hardest Lessons for Startups to Learn",
+   "url": "https://paulgraham.com/startuplessons.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Counterintuitive startup points, topic-bounded",
+   "judge_batch": 4
+  },
+  {
+   "rank": 160,
+   "slug": "vcsqueeze",
+   "title": "The Venture Capital Squeeze",
+   "url": "https://paulgraham.com/vcsqueeze.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Cheap startups squeeze VCs; dated economics",
+   "judge_batch": 4
+  },
+  {
+   "rank": 161,
+   "slug": "college",
+   "title": "Undergraduation",
+   "url": "https://paulgraham.com/college.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "CS undergrad advice, sound but narrow",
+   "judge_batch": 4
+  },
+  {
+   "rank": 162,
+   "slug": "usa",
+   "title": "Made in USA",
+   "url": "https://paulgraham.com/usa.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 5,
+    "reach": 6
+   },
+   "overall": 5,
+   "reason": "Impatience explains US strengths/weaknesses; neat but thin",
+   "judge_batch": 5
+  },
+  {
+   "rank": 163,
+   "slug": "charisma",
+   "title": "It's Charisma, Stupid",
+   "url": "https://paulgraham.com/charisma.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 7,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Elections decided by charisma; provocative but era-bound",
+   "judge_batch": 5
+  },
+  {
+   "rank": 164,
+   "slug": "iflisp",
+   "title": "If Lisp is So Great",
+   "url": "https://paulgraham.com/iflisp.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Popularity uncorrelated with quality; short, familiar",
+   "judge_batch": 5
+  },
+  {
+   "rank": 165,
+   "slug": "diff",
+   "title": "What Made Lisp Different",
+   "url": "https://paulgraham.com/diff.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Lisp's nine ideas; historical, technical",
+   "judge_batch": 5
+  },
+  {
+   "rank": 166,
+   "slug": "langdes",
+   "title": "Five Questions about Language Design",
+   "url": "https://paulgraham.com/langdes.html",
+   "dimensions": {
+    "insight": 6,
+    "contrarian": 4,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "Languages for people; chairs-vs-bridges design analogy",
+   "judge_batch": 5
+  },
+  {
+   "rank": 167,
+   "slug": "popular",
+   "title": "Being Popular",
+   "url": "https://paulgraham.com/popular.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 5
+   },
+   "overall": 5,
+   "reason": "What makes a language popular; hacker-centric, inside baseball",
+   "judge_batch": 5
+  },
+  {
+   "rank": 168,
+   "slug": "javacover",
+   "title": "Java's Cover",
+   "url": "https://paulgraham.com/javacover.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 4
+   },
+   "overall": 5,
+   "reason": "Hacker's radar for bad tech; intriguing but hand-wavy",
+   "judge_batch": 5
+  },
+  {
+   "rank": 169,
+   "slug": "winc",
+   "title": "How to Convert Between Wealth and Income Tax",
+   "url": "https://paulgraham.com/winc.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 6,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Sharp tax-math point, narrow policy scope",
+   "judge_batch": 0
+  },
+  {
+   "rank": 170,
+   "slug": "users",
+   "title": "What I've Learned from Users",
+   "url": "https://paulgraham.com/users.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "YC operational lessons; topic-bounded",
+   "judge_batch": 0
+  },
+  {
+   "rank": 171,
+   "slug": "weird",
+   "title": "Weird Languages",
+   "url": "https://paulgraham.com/weird.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Weird languages reveal non-glue programming; niche",
+   "judge_batch": 0
+  },
+  {
+   "rank": 172,
+   "slug": "donate",
+   "title": "Donate Unrestricted",
+   "url": "https://paulgraham.com/donate.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 5,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Unrestricted-giving tip; practical, narrow",
+   "judge_batch": 0
+  },
+  {
+   "rank": 173,
+   "slug": "airbnbs",
+   "title": "The Airbnbs",
+   "url": "https://paulgraham.com/airbnbs.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "Airbnb founding memoir; mostly narrative",
+   "judge_batch": 0
+  },
+  {
+   "rank": 174,
+   "slug": "pow",
+   "title": "Charisma / Power",
+   "url": "https://paulgraham.com/pow.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 5,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "Short note: uncharismatic-powerful draws unfair blame",
+   "judge_batch": 1
+  },
+  {
+   "rank": 175,
+   "slug": "pgh",
+   "title": "How to Make Pittsburgh a Startup Hub",
+   "url": "https://paulgraham.com/pgh.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "Locale-specific talk, low transfer",
+   "judge_batch": 1
+  },
+  {
+   "rank": 176,
+   "slug": "corpdev",
+   "title": "Don't Talk to Corp Dev",
+   "url": "https://paulgraham.com/corpdev.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Tactical startup warning, narrow",
+   "judge_batch": 1
+  },
+  {
+   "rank": 177,
+   "slug": "pinch",
+   "title": "The Fatal Pinch",
+   "url": "https://paulgraham.com/pinch.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Names a startup death spiral; tactical",
+   "judge_batch": 1
+  },
+  {
+   "rank": 178,
+   "slug": "fr",
+   "title": "How to Raise Money",
+   "url": "https://paulgraham.com/fr.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Long practical fundraising manual, low philosophy",
+   "judge_batch": 1
+  },
+  {
+   "rank": 179,
+   "slug": "herd",
+   "title": "Investor Herd Dynamics",
+   "url": "https://paulgraham.com/herd.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "Sharp on investor psychology but confined to fundraising",
+   "judge_batch": 2
+  },
+  {
+   "rank": 180,
+   "slug": "patentpledge",
+   "title": "The Patent Pledge",
+   "url": "https://paulgraham.com/patentpledge.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 5,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Practical proposal, narrow scope",
+   "judge_batch": 2
+  },
+  {
+   "rank": 181,
+   "slug": "control",
+   "title": "Founder Control",
+   "url": "https://paulgraham.com/control.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 5,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Board-control shift; insider governance detail",
+   "judge_batch": 2
+  },
+  {
+   "rank": 182,
+   "slug": "tablets",
+   "title": "Tablets",
+   "url": "https://paulgraham.com/tablets.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 4,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "Ephemeralization prediction, dated but has a lens",
+   "judge_batch": 2
+  },
+  {
+   "rank": 183,
+   "slug": "superangels",
+   "title": "The New Funding Landscape",
+   "url": "https://paulgraham.com/superangels.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Era-specific funding-landscape mapping",
+   "judge_batch": 2
+  },
+  {
+   "rank": 184,
+   "slug": "hiresfund",
+   "title": "High Resolution Fundraising",
+   "url": "https://paulgraham.com/hiresfund.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 4,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "Markets evolve to higher resolution; niche mechanics",
+   "judge_batch": 2
+  },
+  {
+   "rank": 185,
+   "slug": "future",
+   "title": "The Future of Startup Funding",
+   "url": "https://paulgraham.com/future.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Time-stamped funding forecast",
+   "judge_batch": 2
+  },
+  {
+   "rank": 186,
+   "slug": "apple",
+   "title": "Apple's Mistake",
+   "url": "https://paulgraham.com/apple.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 5,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "App Store critique, dated opinion piece",
+   "judge_batch": 2
+  },
+  {
+   "rank": 187,
+   "slug": "kate",
+   "title": "What Kate Saw in Silicon Valley",
+   "url": "https://paulgraham.com/kate.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Outsider's fresh but light observations",
+   "judge_batch": 2
+  },
+  {
+   "rank": 188,
+   "slug": "ramenprofitable",
+   "title": "Ramen Profitable",
+   "url": "https://paulgraham.com/ramenprofitable.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 2
+   },
+   "overall": 4,
+   "reason": "Useful term for founders, but narrow finance concept",
+   "judge_batch": 3
+  },
+  {
+   "rank": 189,
+   "slug": "angelinvesting",
+   "title": "How to Be an Angel Investor",
+   "url": "https://paulgraham.com/angelinvesting.html",
+   "dimensions": {
+    "insight": 3,
+    "contrarian": 2,
+    "reach": 2
+   },
+   "overall": 4,
+   "reason": "Practical how-to, low philosophical depth",
+   "judge_batch": 3
+  },
+  {
+   "rank": 190,
+   "slug": "maybe",
+   "title": "Can You Buy a Silicon Valley?  Maybe.",
+   "url": "https://paulgraham.com/maybe.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Funding-a-city analysis, topic-bounded",
+   "judge_batch": 3
+  },
+  {
+   "rank": 191,
+   "slug": "divergence",
+   "title": "Could VC be a Casualty of the Recession?",
+   "url": "https://paulgraham.com/divergence.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Startups diverging from VC, era-bound finance",
+   "judge_batch": 3
+  },
+  {
+   "rank": 192,
+   "slug": "badeconomy",
+   "title": "Why to Start a Startup in a Bad Economy",
+   "url": "https://paulgraham.com/badeconomy.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Founders matter more than economy; thin",
+   "judge_batch": 3
+  },
+  {
+   "rank": 193,
+   "slug": "fundraising",
+   "title": "A Fundraising Survival Guide",
+   "url": "https://paulgraham.com/fundraising.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Detailed tactical guide, low transfer",
+   "judge_batch": 3
+  },
+  {
+   "rank": 194,
+   "slug": "prcmc",
+   "title": "The Pooled-Risk Company Management Company",
+   "url": "https://paulgraham.com/prcmc.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Niche financial-structure proposal",
+   "judge_batch": 3
+  },
+  {
+   "rank": 195,
+   "slug": "ycombinator",
+   "title": "A New Venture Animal",
+   "url": "https://paulgraham.com/ycombinator.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "Scaling-animals metaphor, mostly self-description",
+   "judge_batch": 3
+  },
+  {
+   "rank": 196,
+   "slug": "startuphubs",
+   "title": "Why to Move to a Startup Hub",
+   "url": "https://paulgraham.com/startuphubs.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Move to the hub; single argument, bounded",
+   "judge_batch": 3
+  },
+  {
+   "rank": 197,
+   "slug": "webstartups",
+   "title": "The Future of Web Startups",
+   "url": "https://paulgraham.com/webstartups.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "Predictions essay, era-bound",
+   "judge_batch": 3
+  },
+  {
+   "rank": 198,
+   "slug": "die",
+   "title": "How Not to Die",
+   "url": "https://paulgraham.com/die.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Startup-death survival talk, tactical",
+   "judge_batch": 3
+  },
+  {
+   "rank": 199,
+   "slug": "guidetoinvestors",
+   "title": "The Hacker's Guide to Investors",
+   "url": "https://paulgraham.com/guidetoinvestors.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Useful investor field-guide, tactical and era-bound",
+   "judge_batch": 4
+  },
+  {
+   "rank": 200,
+   "slug": "microsoft",
+   "title": "Microsoft is Dead",
+   "url": "https://paulgraham.com/microsoft.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 5,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Sharp observation but occasional, dated",
+   "judge_batch": 4
+  },
+  {
+   "rank": 201,
+   "slug": "island",
+   "title": "The Island Test",
+   "url": "https://paulgraham.com/island.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "Charming addiction test, minor",
+   "judge_batch": 4
+  },
+  {
+   "rank": 202,
+   "slug": "whyyc",
+   "title": "Why YC",
+   "url": "https://paulgraham.com/whyyc.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "Economy as open-source hack, charming aside",
+   "judge_batch": 4
+  },
+  {
+   "rank": 203,
+   "slug": "web20",
+   "title": "Web 2.0",
+   "url": "https://paulgraham.com/web20.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Dissecting a buzzword, era-bound",
+   "judge_batch": 4
+  },
+  {
+   "rank": 204,
+   "slug": "startupfunding",
+   "title": "How to Fund a Startup",
+   "url": "https://paulgraham.com/startupfunding.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Thorough funding mechanics, reference-tactical",
+   "judge_batch": 4
+  },
+  {
+   "rank": 205,
+   "slug": "sfp",
+   "title": "What I Did this Summer",
+   "url": "https://paulgraham.com/sfp.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "YC summer report, occasional",
+   "judge_batch": 4
+  },
+  {
+   "rank": 206,
+   "slug": "laundry",
+   "title": "A Version 1.0",
+   "url": "https://paulgraham.com/laundry.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "Draft-showing on rewriting; useful but meta and minor",
+   "judge_batch": 5
+  },
+  {
+   "rank": 207,
+   "slug": "ffb",
+   "title": "Filters that Fight Back",
+   "url": "https://paulgraham.com/ffb.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Spam-filter counterattack; clever but niche technical",
+   "judge_batch": 5
+  },
+  {
+   "rank": 208,
+   "slug": "better",
+   "title": "Better Bayesian Filtering",
+   "url": "https://paulgraham.com/better.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 4,
+   "reason": "Technical filtering improvements, narrow",
+   "judge_batch": 5
+  },
+  {
+   "rank": 209,
+   "slug": "rootsoflisp",
+   "title": "The Roots of Lisp",
+   "url": "https://paulgraham.com/rootsoflisp.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 4,
+   "reason": "McCarthy's Lisp core exposition; scholarly, narrow",
+   "judge_batch": 5
+  },
+  {
+   "rank": 210,
+   "slug": "reddits",
+   "title": "The Reddits",
+   "url": "https://paulgraham.com/reddits.html",
+   "dimensions": {
+    "insight": 3,
+    "contrarian": 2,
+    "reach": 3
+   },
+   "overall": 3,
+   "reason": "Founding memoir, little transferable idea",
+   "judge_batch": 0
+  },
+  {
+   "rank": 211,
+   "slug": "wtax",
+   "title": "Modeling a Wealth Tax",
+   "url": "https://paulgraham.com/wtax.html",
+   "dimensions": {
+    "insight": 3,
+    "contrarian": 4,
+    "reach": 2
+   },
+   "overall": 3,
+   "reason": "Arithmetic exercise, narrow and occasional",
+   "judge_batch": 1
+  },
+  {
+   "rank": 212,
+   "slug": "cred",
+   "title": "Coronavirus and Credibility",
+   "url": "https://paulgraham.com/cred.html",
+   "dimensions": {
+    "insight": 5,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 3,
+   "reason": "Timely occasional piece on prediction accountability",
+   "judge_batch": 1
+  },
+  {
+   "rank": 213,
+   "slug": "jessica",
+   "title": "Jessica Livingston",
+   "url": "https://paulgraham.com/jessica.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 3,
+   "reason": "Warm personal tribute, little transferable idea",
+   "judge_batch": 1
+  },
+  {
+   "rank": 214,
+   "slug": "name",
+   "title": "Change Your Name",
+   "url": "https://paulgraham.com/name.html",
+   "dimensions": {
+    "insight": 3,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 3,
+   "reason": "Tactical naming advice for startups",
+   "judge_batch": 1
+  },
+  {
+   "rank": 215,
+   "slug": "invtrend",
+   "title": "Startup Investing Trends",
+   "url": "https://paulgraham.com/invtrend.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 3,
+   "reason": "Era-bound investor talk, largely occasional",
+   "judge_batch": 2
+  },
+  {
+   "rank": 216,
+   "slug": "hw",
+   "title": "The Hardware Renaissance",
+   "url": "https://paulgraham.com/hw.html",
+   "dimensions": {
+    "insight": 3,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 3,
+   "reason": "Short trend-spotting occasional piece",
+   "judge_batch": 2
+  },
+  {
+   "rank": 217,
+   "slug": "ycstart",
+   "title": "How Y Combinator Started",
+   "url": "https://paulgraham.com/ycstart.html",
+   "dimensions": {
+    "insight": 3,
+    "contrarian": 2,
+    "reach": 2
+   },
+   "overall": 3,
+   "reason": "Memoir origin story, little transferable idea",
+   "judge_batch": 2
+  },
+  {
+   "rank": 218,
+   "slug": "airbnb",
+   "title": "Subject: Airbnb",
+   "url": "https://paulgraham.com/airbnb.html",
+   "dimensions": {
+    "insight": 3,
+    "contrarian": 2,
+    "reach": 2
+   },
+   "overall": 3,
+   "reason": "Published email exchange, occasional artifact",
+   "judge_batch": 2
+  },
+  {
+   "rank": 219,
+   "slug": "twitter",
+   "title": "Why Twitter is a Big Deal",
+   "url": "https://paulgraham.com/twitter.html",
+   "dimensions": {
+    "insight": 3,
+    "contrarian": 2,
+    "reach": 2
+   },
+   "overall": 3,
+   "reason": "Short occasional note on protocols",
+   "judge_batch": 3
+  },
+  {
+   "rank": 220,
+   "slug": "5founders",
+   "title": "Five Founders",
+   "url": "https://paulgraham.com/5founders.html",
+   "dimensions": {
+    "insight": 2,
+    "contrarian": 1,
+    "reach": 2
+   },
+   "overall": 3,
+   "reason": "Biographical list, little original argument",
+   "judge_batch": 3
+  },
+  {
+   "rank": 221,
+   "slug": "investors",
+   "title": "How to Present to Investors",
+   "url": "https://paulgraham.com/investors.html",
+   "dimensions": {
+    "insight": 3,
+    "contrarian": 3,
+    "reach": 2
+   },
+   "overall": 3,
+   "reason": "Pure presentation how-to, niche",
+   "judge_batch": 4
+  },
+  {
+   "rank": 222,
+   "slug": "6631327",
+   "title": "6,631,372",
+   "url": "https://paulgraham.com/6631327.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 3,
+   "reason": "Patent anecdote, occasional",
+   "judge_batch": 4
+  },
+  {
+   "rank": 223,
+   "slug": "mac",
+   "title": "Return of the Mac",
+   "url": "https://paulgraham.com/mac.html",
+   "dimensions": {
+    "insight": 3,
+    "contrarian": 3,
+    "reach": 2
+   },
+   "overall": 3,
+   "reason": "Hackers returning to Mac, dated observation",
+   "judge_batch": 4
+  },
+  {
+   "rank": 224,
+   "slug": "polls",
+   "title": "Bradley's Ghost",
+   "url": "https://paulgraham.com/polls.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 4,
+    "reach": 3
+   },
+   "overall": 3,
+   "reason": "Topical exit-poll analysis, occasional piece",
+   "judge_batch": 5
+  },
+  {
+   "rank": 225,
+   "slug": "fix",
+   "title": "What Languages Fix",
+   "url": "https://paulgraham.com/fix.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 3
+   },
+   "overall": 3,
+   "reason": "Languages-by-problem-fixed list; witty but slight",
+   "judge_batch": 5
+  },
+  {
+   "rank": 226,
+   "slug": "prop62",
+   "title": "This Year We Can End the Death Penalty in California",
+   "url": "https://paulgraham.com/prop62.html",
+   "dimensions": {
+    "insight": 4,
+    "contrarian": 3,
+    "reach": 4
+   },
+   "overall": 3,
+   "reason": "Death-penalty op-ed; moral but occasional",
+   "judge_batch": 5
+  },
+  {
+   "rank": 227,
+   "slug": "nft",
+   "title": "An NFT That Saves Lives",
+   "url": "https://paulgraham.com/nft.html",
+   "dimensions": {
+    "insight": 2,
+    "contrarian": 2,
+    "reach": 2
+   },
+   "overall": 2,
+   "reason": "Promotional announcement, no lasting idea",
+   "judge_batch": 0
+  },
+  {
+   "rank": 228,
+   "slug": "vw",
+   "title": "Snapshot: Viaweb, June 1998",
+   "url": "https://paulgraham.com/vw.html",
+   "dimensions": {
+    "insight": 2,
+    "contrarian": 2,
+    "reach": 2
+   },
+   "overall": 2,
+   "reason": "Nostalgic snapshot, no argument",
+   "judge_batch": 2
+  },
+  {
+   "rank": 229,
+   "slug": "seesv",
+   "title": "Where to See Silicon Valley",
+   "url": "https://paulgraham.com/seesv.html",
+   "dimensions": {
+    "insight": 2,
+    "contrarian": 2,
+    "reach": 2
+   },
+   "overall": 2,
+   "reason": "Travel guide, no idea content",
+   "judge_batch": 2
+  },
+  {
+   "rank": 230,
+   "slug": "foundervisa",
+   "title": "The Founder Visa",
+   "url": "https://paulgraham.com/foundervisa.html",
+   "dimensions": {
+    "insight": 2,
+    "contrarian": 3,
+    "reach": 2
+   },
+   "overall": 2,
+   "reason": "Policy proposal, occasional piece",
+   "judge_batch": 3
+  }
+ ],
+ "rubric_frontmatter": "name: inspiration\ndimensions:\n  - key: insight\n    weight: 1.0\n    question: Does it tell you something true and important you had never articulated?\n    anchors: \"0 = restates common knowledge; 10 = something you had never put into words\"\n    veto_below: null    # set to e.g. 2 to disqualify any piece scoring under 2 here\n  - key: contrarian\n    weight: 1.0\n    question: Does it challenge what most people believe, with substance behind the challenge?\n    anchors: \"0 = agrees with the crowd; 10 = convincingly overturns a broadly held belief\"\n    veto_below: null\n  - key: reach\n    weight: 1.0\n    question: Does the idea generalize far beyond its immediate topic?\n    anchors: \"0 = stays inside its niche; 10 = changes how you think or live\"\n    veto_below: null\nscoring: holistic        # holistic | weighted_mean | median | max | min\ntie_break: recency\noverall_anchors: \"9-10 worldview-shifting; 7-8 strong original framework, high transfer; 5-6 solid but topic-bounded; 3-4 competent but conventional or era-bound; 1-2 announcements/occasional pieces\""
+}

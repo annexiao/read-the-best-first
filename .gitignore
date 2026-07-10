@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Build output
+*.m4b
+*_audiobook_work/
+work/
+chapters/
+
+# Fetch caches (blog archives downloaded to disk)
+html/
+
+# Model weight cache, if ever pointed at a project-local dir
+.cache/
