@@ -42,9 +42,19 @@ XHTML = """<?xml version="1.0" encoding="utf-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
 <head><title>{title}</title>
 <style>
-body {{ font-family: Georgia, serif; line-height: 1.55; margin: 5%; }}
-h1 {{ font-size: 1.5em; line-height: 1.2; }}
-p.meta {{ color: #777; font-style: italic; }}
+html {{ -webkit-text-size-adjust: 100%; }}
+body {{ font-family: Georgia, "Times New Roman", serif; line-height: 1.62;
+        max-width: 33em; margin: 0 auto; padding: 1.2em 7%;
+        text-align: left; hyphens: auto; color: #1a1a1a; background: #faf8f4; }}
+h1 {{ font-weight: normal; font-variant: small-caps; letter-spacing: .06em;
+      font-size: 1.5em; line-height: 1.25; color: #8a2b2b; margin: .2em 0 1.4em; }}
+p {{ margin: 0 0 1.05em; }}
+p.meta {{ color: #8a8a8a; font-style: italic; margin-bottom: 2em; }}
+@media (prefers-color-scheme: dark) {{
+  body {{ color: #e6e2da; background: #141414; }}
+  h1 {{ color: #e58f8f; }}
+  p.meta {{ color: #9a958c; }}
+}}
 </style></head>
 <body>{body}</body></html>
 """
@@ -52,6 +62,19 @@ p.meta {{ color: #777; font-style: italic; }}
 
 def esc(s):
     return htmllib.escape(str(s), quote=True)
+
+
+def _split_paragraphs(text):
+    # When paragraphs are separated by blank lines (trafilatura on PG-style
+    # <br><br> markup, and .md/.txt), split on blank lines and collapse each
+    # paragraph's soft line-wraps into spaces. Otherwise the text is already
+    # one paragraph per line (trafilatura's normal <p>-per-line output), so
+    # split on single newlines. Splitting every newline on soft-wrapped text
+    # is what turned one 47-paragraph essay into 248 <p> blocks.
+    if re.search(r"\n\s*\n", text):
+        return [re.sub(r"\s+", " ", x).strip()
+                for x in re.split(r"\n\s*\n", text) if x.strip()]
+    return [x.strip() for x in text.split("\n") if x.strip()]
 
 
 def source_to_paragraphs(path, base_dir=None):
@@ -63,12 +86,9 @@ def source_to_paragraphs(path, base_dir=None):
         import trafilatura
         text = trafilatura.extract(raw, include_comments=False,
                                    include_links=False, favor_recall=True) or ""
-        paras = [x.strip() for x in text.split("\n") if x.strip()]
-    else:  # .txt / .md: blank-line paragraphs
+    else:  # .txt / .md
         text = raw.decode("utf-8", errors="replace")
-        paras = [re.sub(r"\s+", " ", x).strip()
-                 for x in re.split(r"\n\s*\n", text) if x.strip()]
-    return paras
+    return _split_paragraphs(text)
 
 
 def chapter_doc(title, paras):
