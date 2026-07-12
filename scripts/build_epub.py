@@ -72,9 +72,18 @@ def _split_paragraphs(text):
     # split on single newlines. Splitting every newline on soft-wrapped text
     # is what turned one 47-paragraph essay into 248 <p> blocks.
     if re.search(r"\n\s*\n", text):
-        return [re.sub(r"\s+", " ", x).strip()
-                for x in re.split(r"\n\s*\n", text) if x.strip()]
-    return [x.strip() for x in text.split("\n") if x.strip()]
+        paras = [re.sub(r"\s+", " ", x).strip()
+                 for x in re.split(r"\n\s*\n", text) if x.strip()]
+    else:
+        paras = [x.strip() for x in text.split("\n") if x.strip()]
+    # Drop stray layout separators trafilatura emits from some page templates
+    # (e.g. Paul Graham's leading "| " from the nav table).
+    cleaned = []
+    for x in paras:
+        x = re.sub(r"^\|\s*", "", x).strip()
+        if x and x != "|":
+            cleaned.append(x)
+    return cleaned
 
 
 def source_to_paragraphs(path, base_dir=None):
